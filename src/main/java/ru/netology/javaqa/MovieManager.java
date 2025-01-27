@@ -4,13 +4,14 @@ public class MovieManager {
     private String[] movies = new String[0];
     private int numberOfDisplayed;
 
-    public MovieManager(){
-        this.numberOfDisplayed=5;
+    public MovieManager() {
+        this.numberOfDisplayed = 5;
     }
 
-    public MovieManager(int numberOfDisplayed){
-        this.numberOfDisplayed=numberOfDisplayed;
+    public MovieManager(int numberOfDisplayed) {
+        this.numberOfDisplayed = numberOfDisplayed;
     }
+
     public void addMovie(String movie) {
         String[] tmp = new String[movies.length + 1];
         for (int i = 0; i < movies.length; i++) {
